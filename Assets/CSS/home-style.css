@@ -1,0 +1,350 @@
+/***********************************/
+/******** LEFT SIDE STYLING ********/
+/***********************************/
+
+/* Julia Liang Text */
+#name {
+	font-family: "Lato", sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* Education Text */
+#education {
+	font-family: "Lato", Serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+/* .name-description Text */
+.name-description {
+	font-family: "Lato", Serif;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: justify;
+	font-size: 14px;
+}
+
+#jul {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	height: 60px;
+}
+
+.container-fluid {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	width: 70%;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);*/
+	
+}
+
+#line {
+	width: 50px;
+	height: 4px;
+	background-color: #333;
+	margin-top: 20px;
+}
+
+#social-media {
+	letter-spacing: 2px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+/* Social Icons */
+.fa {
+	font-size: 1.5em;
+	text-align: center;
+	color: #333;
+	text-decoration: none;
+	transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+}
+.fa:hover {
+	opacity: .7;
+	color: #333;
+	text-decoration: none;
+}
+.fa:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+/************************************/
+/******** RIGHT SIDE STYLING ********/
+/************************************/
+
+#right {
+	padding: 0;
+	margin: 0;
+}
+
+.right-section {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.overlay {
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	opaci
+	ty: 0;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    z-index: 100;
+}
+
+#p1 {
+	background-image: url('../images/ht.jpg');
+}
+
+#p2 {
+	background-image: url('../images/illustration.png');
+}
+
+#p3 {
+	background: url('../images/fine-art.jpg');
+	background-position: center;
+}
+
+#p4 {
+	background-color: #9FB1CD;
+}
+
+.project-title {
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+/*	opacity: .85;*/
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+p.view-link {
+    color: #BDD6D6;
+    position: absolute;
+    opacity: 0;
+	top: 50%;
+	left: 50%;
+	font-weight: 400;
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	font-family: 'Lato', sans-serif;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.project-text:hover .overlay {
+	opacity: 1;
+}
+
+.project-text:hover .view-link {
+	opacity: 1;
+}
+
+@keyframes title-text-animation {
+	from {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+	to {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+}
+@-webkit-keyframes title-text-animation {
+	from {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+	to {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+}
+@-moz-keyframes title-text-animation {
+	from {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+	to {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+}
+@-o-keyframes title-text-animation {
+	from {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+	to {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+}
+
+@keyframes title-text-animation-out {
+	from {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+    to {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+}
+@-webkit-keyframes title-text-animation-out {
+	from {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+    to {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+}
+@-moz-keyframes title-text-animation-out {
+	from {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+    to {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+}
+@-o-keyframes title-text-animation-out {
+	from {transform: translate(-50%, -150%);
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);}
+    to {transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+}
+
+.project-text .project-title {
+	animation-name: title-text-animation-out;
+	-webkit-animation-name: title-text-animation-out;
+	-moz-animation-name: title-text-animation-out;
+	-o-animation-name: title-text-animation-out;
+	animation-duration: .5s;
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+.project-text:hover .project-title {
+	animation-name: title-text-animation;
+	-webkit-animation-name: title-text-animation;
+	-moz-animation-name: title-text-animation;
+	-o-animation-name: title-text-animation;
+	animation-duration: .5s;
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 992px) {
+	#right {
+		min-height: 100vh;
+	}
+	.right-section {
+		height: 33.33vh;
+		width: 100%;
+	}
+	#left {
+		position: fixed;
+		float: left;
+		height: 100%;
+		overflow: auto;
+	}
+	#right {
+		float: right;
+		height: 100%;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	/*.container-fluid {
+		position: relative;
+    	margin-top: 10%;
+    	margin-bottom: 10%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	padding-right: 15px;
+    	padding-left: 15px;
+    	width: 70%;
+    	box-sizing: border-box;
+	}*/
+	.right-section {
+		height: 40vw;
+	}
+	.right-section {
+		width: 100%;
+	}
+}
