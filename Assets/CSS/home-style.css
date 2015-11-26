@@ -348,3 +348,17 @@ p.view-link {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 550px) {
+	.container-fluid {
+		width: 90%;
+	}
+
+	.name-description {
+		margin-left: 0px;
+	}
+
+	#social-media {
+		margin-left: 0px;
+	}
+}
