@@ -1,99 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Personal Work | Julia Liang</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+      .padding{
+        padding: 20px 0px;
+      }
 
-<html lang="en">
-<head>
+      .ae-grid.ae-grid--collapse.au-xs-ptp-1.title {
+        padding-top: 8.5rem;
+      }
+      .item-inside-1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/typeposter.png");
+        background-size: 100%;
+        background-position: 50% 25%;
+        z-index: -100
+      }
+      .item-inside__meta {
+        color: white;
+      }
 
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="Julia Liang, Designer &amp; Developer. UC Berkeley, Computer Science 2018. Front-End Developer &amp; Graphic Design Intern at Highway Twenty.">
-  <meta name="keywords" content="Julia Liang, Portfolio, Lan Julia Liang, Cal, Berkeley, Arizona, Designer, Developer, Computer Science, Art Practice, UI, UX, Graphic Design">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="img/icon.png" />
 
-<!--Style-->
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
+      
+    </style>
+  </head>
+  <body class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+      </label>
+   <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index">julia liang</a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="rk-menu__item"><a href="index" class="rk-menu__link">Portfolio</a>
+              <nav class="rk-menu__sub">
+                <ul class="rk-container">
+                  <li class="rk-menu__item"><a href="ui-ux" class="rk-menu__link">UI/UX</a></li>
+                  <li class="rk-menu__item"><a href="graphic-design" class="rk-menu__link">Graphic Design</a></li>
+                  <li class="rk-menu__item"><a href="web-development" class="rk-menu__link">Web Development</a></li>
+                </ul>
+              </nav>
+            </li>
+            <li class="rk-menu__item"><a href="about" class="rk-menu__link">About</a>
+            </li>
+           <!--  <li class="rk-menu__item"><a href="contact" class="rk-menu__link">Contact</a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="ae-container-fluid ae-container-fluid--full">
+      <header class="rk-portfolio-cover  item-inside-1">
+        <div class="item-inside__meta">
+          <h1 class="ae-u-bolder rk-portfolio-title ">Personal Work</h1>
+          <p class="ae-theta rk-portfolio-category ">Graphic Design</p>
+        </div>
+      </header>
   
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  
-</head>
+      <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+           <div class="ae-grid__item item-lg-8 au-lg-ptp-1">
+              <h4>In my spare time, I make icons and patterns for fun, and here’s just some of them.</h4>
+          </div>
+        </div>
+         <!--  <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/img/inner-1.jpg" ></div> -->
 
-<body>
+        <div class="ae-grid ae-grid--collapse">
+          <div class="ae-grid__item item-lg--auto"><img class="padding" src="assets/img/typography.png" alt="Typography Poster"></div>
+        </div>
 
-  <nav class="nav">
-    <a class="image" href="/"><img src="img/logo/logo.png" width="200px"></a>
-    <ul>
-      <li><a class="text" href="/">Work</a></li>
-      <li><a class="text" href="about">About</a></li>
-    </ul>
-  </nav>
+        <div class="ae-grid ae-grid--collapse">
+          <div class="ae-grid__item item-lg--auto"><img class="padding" src="assets/img/study.png" alt="Study Graphic"></div>
+        </div>
 
-  <!--Content-->
+        <div class="ae-grid ae-grid--collapse">
+          <div class="ae-grid__item item-lg--auto"><img class="padding"src="assets/img/yay.png" alt="Yay Graphic"></div>
+        </div>
 
-  <div class="content" id="ajax-content">
+        <div class="ae-grid ae-grid--collapse">
+          <div class="ae-grid__item item-lg--auto"><img class="padding" src="assets/img/illustration.png" alt="Things I like Illustration"></div>
+        </div>
 
-
-        <div class="text-intro">
-
-          <h1>Personal</h1>
-          
-                    
-	          <div class="one-column">
-	            <p>Graphic Design &amp; Illustration</p>
-	          </div>
-
-
-		          <div class="two-column">
-		            <p>Before I came to college, I had no experience with graphic design. During the fall of my freshman year, I took a student taught class on Photoshop and Illustrator, which taught me the technical skills I needed to explore the world of illustration. I found a space that bridged my understanding of fine arts with the digital world. In my spare time, I make icons and patterns for fun, and here’s just some of them.</p>
-		          </div>   
-               
-				        <img src="img/single/typography.png" width="100%"><br/><br/><br/><br/>
-				        <img src="img/single/study.png" width="100%"><br/><br/><br/><br/>
-                <img src="img/single/chairs.png" width="100%"><br/><br/><br/><br/>
-                <img src="img/single/yay.png" width="100%"><br/><br/><br/><br/>
-                <img src="img/single/illustration.png" width="100%"><br/><br/><br/><br/>
-            
-					        <div class="prev-next">
-					        
-					          <div class="prev-button"><a href="logofolio">Previous</a></div>
-					          <div class="next-button"><a href="myfinances">Next</a></div>
-					
-					        </div>
-            </div>
         
-    </div>
-    <div class="footer">
-        <a href="https://www.dribbble.com/julialiang" target="_blank"><i class="fa fa-dribbble"></i></a>
-        <a href="https://www.linkedin.com/in/julialiang" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/in/pandarillo" target="_blank"><i class="fa fa-instagram"></i></a>
-    </div>
-
-<!--Scripts-->
-
-  <script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
- 
-  <script src="js/script.js" type="text/javascript"></script>
-  
-	<script>
-    $('#button, #buttons').on('click', function() {
-      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
-    // Animation complete.
-    });
-  </script>
-
-
-</body>
+    </section>
+    <footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><!-- <a href="#0" class="rk-social-btn "> -->
+            <!-- <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
+            </svg> -->
+            <a class="social" href="https://www.dribbble.com/julialiang" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a class="social" href="https://www.linkedin.com/in/julialiang" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a class="social" href="https://www.instagram.com/in/pandarillo" target="_blank"><i class="fa fa-instagram"></i></a>
+            <!-- </a> -->
+            </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder">lan.julia.liang@gmail.com</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+  </body>
 </html>
