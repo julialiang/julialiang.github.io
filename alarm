@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mobile Alarm | Julia Liang</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+
+    .padding {
+      padding: 20px 0px;
+    }
+
+    .section-padding {
+      padding: 50px 0px;
+    }
+
+    .item-inside-1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("assets/img/alarm-desinv.png");
+      /*background-image: url("assets/img/alarm-desinv.png");*/
+      background-size: 100%;
+      background-position: 50% 25%;
+      z-index: -20000;
+    }
+    .item-inside__meta {
+      color: white;
+    }
+
+  
+    </style>
+  </head>
+  <body class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+      </label>
+   <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index">julia liang</a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="active rk-menu__item"><a href="index" class="rk-menu__link">Portfolio</a>
+              <nav class="rk-menu__sub">
+                <ul class="rk-container">
+                  <li class="rk-menu__item"><a href="ui-ux" class="rk-menu__link">UI/UX</a></li>
+                  <li class="rk-menu__item"><a href="graphic-design" class="rk-menu__link">Graphic Design</a></li>
+                  <li class="rk-menu__item"><a href="web-development" class="rk-menu__link">Web Development</a></li>
+                </ul>
+              </nav>
+            </li>
+            <li class="rk-menu__item"><a href="about" class="rk-menu__link">About</a>
+            </li>
+            <!-- <li class="rk-menu__item"><a href="contact" class="rk-menu__link">Contact</a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="ae-container-fluid ae-container-fluid--full">
+      <header class="rk-portfolio-cover  item-inside-1 overlay">
+        <div class="item-inside__meta">
+          <h1 class="ae-u-bolder rk-portfolio-title ">Mobile Alarm</h1>
+          <p class="ae-theta rk-portfolio-category ">User Interface / User Experience</p>
+        </div>
+      </header>
+  
+      <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+          <div class="ae-grid__item item-lg-8 au-lg-ptp-1">
+            <h6>The Problem</h6>
+            <p><h2>People almost never wake up joyful.</h2></p>
+            <p>As part of a final project for my Design Foundations class, I re-designed the alarm clock app. For this conceptual design project, I wanted to create an app that fit a need unmet by the dozens of alarm clock apps available in the marketplace.</p>
+          </div>
+        </div>
+
+        <div class="ae-grid ae-grid--collapse padding">
+          <div class="ae-grid__item">
+            <h4>User Research</h4>
+            <p>In order to understand the design challenges in re-designing a widely used application, I interviewed several students on the Berkeley campus about their experiences with alarm clocks. In addition, I conducted market research on the existing apps in the design space.</p>
+          </div>
+        </div>
+
+        <div class="ae-grid ae-grid--collapse">
+          <div class="ae-grid__item item-lg-5">
+            <h6>User Interviews</h6>
+            <p>Through conducting interviews, I learned that people almost always wake up stressed because of the work they have to do that day, and the only time people were excited to wake up is if they had something to look forward to. I also learned that setting an alarm is the last thing a person does before they go to bed unless they read in bed.</p>
+            <img src="assets/img/jana.png" alt="Jana">
+            <p class="caption">Jana, a UC Berkeley student, is one of the students I interviewed</p>
+          </div>
+          <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+            <h6>Market Research</h6>
+            <p>From exploring the design space, I realized that most alarm clocks focus on supporting healthy sleep cycles, forcing a person to wake up, or creating a minimal and simple alarm. While many alarms address these areas,people still seem sluggish and unmotivated to wake up--this became the focus of my final project.</p>
+            <img src="assets/img/designspace.png" alt="Alarm Clock Design Space">
+          </div>
+        </div>
+
+        <div class="ae-grid ae-grid--collapse section-padding">
+          <div class="ae-grid__item">
+            <h4>Concept Development</h4>
+            <p>After further research, I learned that teamwork, purpose, and gratitude generally make people feel motivated and joyful. Using these concepts as a foundation for my app, I decided to design an alarm that forces people to record a gratitude message in order to set an alarm. They would also be able to record something they're looking forward to for the next day, which would then play as an alarm--a reminder of the good in the day</p>
+          </div>
+          <div class="ae-grid__item item-lg-5">
+            <img src="assets/img/storyboard.jpg" alt="Scenario Storyboard">
+            <p class="caption">Scenario storyboard of how someone might use the app</p>
+          </div>
+          <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+              <img src="assets/img/productfeatures.png" alt="App Product Features">
+          </div>
+          <div class="ae-grid__item">
+            <img src="assets/img/userflow.png" alt="Alarm User Flow">
+          </div>
+        </div>
+
+        <div class="ae-grid ae-grid--collapse" style="padding-top: 30px;">
+          <div class="ae-grid__item">
+            <h4>Prototyping</h4>
+            <p>After I began translating my prototypes into higher fidelity, I realized that my original sketches (on the left) were inadequate for the intended functionality of the app, so I re-thought some of the pages of the app. The new sketches included a calendar, which I use as a way of archiving recordings.</p>
+            <img src="assets/img/alarmprototypes.png" alt="Alarm sketches">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="ae-grid ae-grid--collapse" style="padding-top: 50px;">
+          <div class="ae-grid__item">
+            <h4>High Fidelity Prototypes</h4>
+            <img src="assets/img/alarm-final.png" alt="Indiegogo High-Fidelity Mockups">
+            <p class="caption">High-fidelity mockups of the alarm app</p>
+          </div>
+        </div>
+      </div>
+      <div class="ae-container-fluid au-pt-4 au-pb-4">
+        <div class="group-buttons"><a href="swhd" class="au-mt-2 arrow-button arrow-button--right">Next Project<span class="arrow-cont">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#arrow"></use>
+              </svg></span></a></div>
+      </div>
+    </section>
+    <footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><!-- <a href="#0" class="rk-social-btn "> -->
+            <!-- <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
+            </svg> -->
+            <a class="social" href="https://www.dribbble.com/julialiang" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a class="social" href="https://www.linkedin.com/in/julialiang" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a class="social" href="https://www.instagram.com/in/pandarillo" target="_blank"><i class="fa fa-instagram"></i></a>
+            <!-- </a> -->
+            </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder">lan.julia.liang@gmail.com</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+  </body>
+</html>
