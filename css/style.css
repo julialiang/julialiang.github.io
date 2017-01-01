@@ -1022,6 +1022,10 @@ footer .footer-copyright p {
     font-size: 24px;
   }
 
+  p.about {
+    margin-top: 100px;
+  }
+
 }
 
 
@@ -1108,6 +1112,11 @@ footer .footer-copyright p {
 
   #home p,
   #divider p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  p.about {
     font-size: 18px;
     line-height: 32px;
   }
