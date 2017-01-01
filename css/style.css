@@ -306,9 +306,6 @@ footer {
   border: none;
 }
 
-.navbar-nav {
-    margin-top: 20px;
-}
 
 
 /*---------------------------------------
@@ -1102,6 +1099,14 @@ footer .footer-copyright p {
 
   #contact .contact-detail-1 {
     padding-top: 32px;
+  }
+
+  .navbar-nav {
+    margin-top: 40px;
+  }
+
+  .innerpage-first {
+    margin: 10px auto 20px;
   }
 
 
