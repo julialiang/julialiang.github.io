@@ -370,6 +370,8 @@ footer {
   background: transparent;
   border-right-color: #417565;
   border-left-color: #417565;
+  border-top-color: #417565;
+  border-bottom-color: #417565;
   color: #417565;
 }
 
