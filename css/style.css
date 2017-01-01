@@ -1083,11 +1083,11 @@ footer .footer-copyright p {
     font-size: 48px;
   }
 
-  h1 .homepage {
+  h1.fadeInUp.element.homepage{
     font-size: 30px;
   }
 
-  p .home {
+  p.home {
     text-align: center;
   }
 
