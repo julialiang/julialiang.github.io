@@ -1,77 +1,235 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="Julia Liang, Designer &amp; Developer. UC Berkeley, Computer Science 2018. Front-End Developer &amp; Graphic Design Intern at Highway Twenty.">
-  <meta name="keywords" content="Julia Liang, Portfolio, Lan Julia Liang, Cal, Berkeley, Arizona, Designer, Developer, Computer Science, Art Practice, UI, UX, Graphic Design">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="img/icon.png" />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>My Finances | Julia Liang Design Portfolio</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- favicon -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
 </head>
-
 <body>
 
-  <nav class="nav">
-    <a class="image" href="/"><img src="img/logo/logo.png" width="200px"></a>
-    <ul>
-      <li><a class="text" href="/">Work</a></li>
-      <li><a class="text" href="about">About</a></li>
-    </ul>
-  </nav>
 
-  <div class="content" id="ajax-content">
-    <div class="text-intro">
-      <h1>Berkeley Student Information Systems</h1>  
-	      <div class="one-column">
-	        <p>User Interface, User Experience, User Research, &amp; Interaction Design</p>
-	      </div>
-		    <div class="two-column">
-		      <p>The Student Information Systems (SIS) Project is Berkeley’s initiative to replace the aging and disparate student systems. The SIS Project needed help merging billing and financial aid into a single, smooth student experience. <br/> <br/>
-          As a UI/UX designer on a team of two other student designers, <a href="http://chsieh099.github.io/">Cassidy Hsieh</a> and <a href="http://timguan.io/">Tim Guan</a>, I provided a design proposal and prototype of a tool that helps students understand the relationship between their bill and their financial aid. </p>
-		    </div>     
-				<img src="img/single/MyFinances_research.png" width="100%"><br/><br/><br/><br/>
-        <img src="img/portfolio/myFinances-flow.png" width="100%"><br/><br/><br/><br/>
-				<img src="img/single/MyFinances_smallMultiples.png" width="100%"><br/><br/><br/><br/>
-				<img src="img/single/MyFinances_1.png" width="100%"><br/><br/><br/><br/>
-        
-				<div class="prev-next">        
-				<div class="prev-button"><a href="personal">Previous</a></div>
-				<div class="next-button"><a href="northbridge">Next</a></div>
+<!-- PRE LOADER -->
+
+<!-- <div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div> -->
+
+
+
+<!-- Navigation Section -->
+
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container navpadding">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="/" class="navbar-brand"><img src="images/Julia-Name2.png" style="max-height: 70px"></a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<!-- <li><a href="index.html">Home</a></li> -->
+				<li><a href="/">Work</a></li>
+				<li><a href="about">About</a></li>
+				<!-- <li><a href="service.html">Service</a></li> -->
+        		<!-- <li><a href="contact.html">Contact</a></li> -->
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<section id="innerpage" class="innerpage-first">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h1>My Finances</h1>
+				<h2>The Problem: Students cannot understand the relationship between their bill and their financial aid.</h2>
+				<p>The Student Information Systems (SIS) Project is Berkeley’s initiative to replace the aging and disparate student systems. The SIS Project needed help merging billing and financial aid into a single, smooth student experience.</p>
 			</div>
-            </div>
-        
-    </div>
 
-    <div class="footer">
-        <a href="https://www.dribbble.com/julialiang" target="_blank"><i class="fa fa-dribbble"></i></a>
-        <a href="https://www.linkedin.com/in/julialiang" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/in/pandarillo" target="_blank"><i class="fa fa-instagram"></i></a>
-    </div>
+		</div>
+	</div>
+</section>
 
-<!--Scripts-->
+<section id="user-research" class="innerpage-first">
+	<div class="container">
+		<div class="row">
 
-  <script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
- 
-  <script src="js/script.js" type="text/javascript"></script>
-  
-	<script>
-    $('#button, #buttons').on('click', function() {
-      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
-    // Animation complete.
-    });
-  </script>
+			<div class="col-md-6 col-sm-12">
+				<h2>User Research</h2>
+				<p>We began by studying the financial web applications of several other universities and explored their layouts of students' financial information.</p>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<img src="images/financialsystems.png" class="img-responsive" alt="User Research on other University Billing Platforms">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h3>Surveys</h3>
+				<p>We received 23 responses to an exploratory survey to better understand students' experiences with Cal financial aid and billing systems.</p>
+				<img src="images/sissurvey.png" class="img-responsive" alt="MyFinances Survey Results">
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h3>User Interviews</h3>
+				<p>We also conducted several in-depth user interviews by having students walk us through the process of paying their bill and understanding their financial aid.</p>
+				<img src="images/sis-interviews.png" class="img-responsive" alt="MyFinances Survey Results">
+				<p class="caption">Personas we created to reflect the students we interviewed</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="ideation" class="innerpage-first">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h2>Key Insights & Ideation</h2>
+				<ol>
+	            	<b><li>Students feel they cannot trust the system because it lacks specific information about the allocation of financial resources</li></b>
+	            		<ul>
+	            			<li>Provide a breakdown of fees and where to go with questions</li>
+	            			<li>Display information icons next to each charged item so students know what each charge covers</li>
+	            			<li>Stay consistent with color coding across the platform</li>
+	            		</ul>
+	            	<b><li>Students are not directly presented with the most important information</li></b>
+	            		<ul>
+	            			<li>Add a checklist with tasks that students must complete</li>
+	            			<li>Display visuals on how student loads and financial aid affect billing</li>
+	            			<li>Provide disclaimers before potentially risky actions (ex: taking out loans)</li>
+	            		</ul>
+	            	<b><li>Students sometimes find the terminology confusing or misleading</li></b>
+	            		<ul>
+	            			<li>Display information icons beside each item with definitions and instructions</li>
+	            			<li>Create a page for "Understanding your bill" containing an index of terms</li>
+	            		</ul>
+	            	<b><li>Students are frustrated with the systems lack of response</li></b>
+	            		<ul>
+	            			<li>Display a banner that clearly states a payment is being processed after one has been paid</li>
+	            			<li>Place visual cues to indicate when actions have been finalized (such as graying out an option)</li>
+	            			<li>Create an online discussion where students for students to ask and answer questions</li>
+	            		</ul>
+            	</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="prototyping" class="innerpage-first">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h2>Prototyping</h2>
+				<p>We used small multiples to help us design different layouts. We used a combination of user testing and our own discretion to narrow our selection of possible layouts.</p>
+				<img src="images/smallmultiples.png" class="img-responsive" alt="Indiegogo profiles on usertesting.com">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="deliverables" class="innerpage-first">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h2>Final Deliverables</h2>
+				<p>Some notable design features include:</p>
+	            <ul>
+	            	<li>Having amount due, the most important piece of information, displayed at the top</li>
+	            	<li>Representing the relationship between financial aid and the monthly bill with a progress bar. Different segments on the bar show how much of the bill has been covered by existing aid, scholarships, or loans, and how much is left to be paid.</li>
+	            	<li>Maintaining the colors of each category to the descriptions in the form of a bar on the side</li>
+	            	<li>Having a more descriptive notifications section</li>
+	            	<li>Offering a detailed description of the bill should students have any questions</li>
+	            	<li>Placing the "Frequently Asked Questions" in the footer rather than allowing it to take up its own column</li>
+	            </ul>
+				<img src="images/sis1.png" class="img-responsive" alt="Indiegogo High Fidelity">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sprint-4" class="innerpage-img">
+	<div class="prev-next">        
+		<div class="prev-button"><a href="atap"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous Project</a></div>
+		<div class="next-button"><a href="alarm">Next Project <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+	</div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer class="bg-dark">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<div class="footer-link">
+					<ul>
+						<li><a href="/">Work</a></li>
+						<li><a href="about">About</a></li>
+						<!-- <li><a href="contact.html">Contact</a></li> -->
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<ul class="social-icon">	
+						<li><a href="https://www.instagram.com/pandarillo/" class="fa fa-instagram"></a></li>
+						<li><a href="https://www.linkedin.com/in/julialiang" class="fa fa-linkedin"></a></li>
+						<li><a href="https://dribbble.com/julialiang" class="fa fa-dribbble"></a></li>
+					</ul>
+					<p class="small">© Copyright 2016 Julia Liang - All Rights Reserved</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Back top -->
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
