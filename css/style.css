@@ -1083,6 +1083,10 @@ footer .footer-copyright p {
     font-size: 48px;
   }
 
+  h1 .homepage {
+    font-size: 30px;
+  }
+
   #home p,
   #divider p {
     font-size: 18px;
@@ -1106,7 +1110,7 @@ footer .footer-copyright p {
   }
 
   .innerpage-first {
-    margin: 10px auto 20px;
+    margin: 20px auto 20px;
   }
 
 
