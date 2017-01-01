@@ -302,6 +302,14 @@ footer {
   padding: 0px 30px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
 
 /*---------------------------------------
     Main section              
@@ -848,6 +856,7 @@ footer {
   position:relative;
   float:left;
   text-align:left;
+  padding-left: 15px;
 }
 
 .next-button{
@@ -855,6 +864,7 @@ footer {
   position:relative;
   float:left;
   text-align:right;
+  padding-right: 15px;
 }
 
 .fa-angle-left {
@@ -1011,12 +1021,20 @@ footer .footer-copyright p {
 
 @media (max-width: 768px) {
 
-  body {
+ /* body {
     text-align: center;
-  }
+  }*/
 
   h1 {
     font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .problem {
+    text-align: center;
   }
 
   #portfolio,
@@ -1032,6 +1050,10 @@ footer .footer-copyright p {
 
 
 @media (max-width: 767px) {
+
+  h2 {
+    font-size: 28px;
+  }
 
   .navbar-default {
     text-align: center;
@@ -1061,7 +1083,7 @@ footer .footer-copyright p {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 48px;
   }
 
   #home p,
