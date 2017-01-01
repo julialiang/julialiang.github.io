@@ -1087,6 +1087,10 @@ footer .footer-copyright p {
     font-size: 30px;
   }
 
+  p .home {
+    text-align: center;
+  }
+
   #home p,
   #divider p {
     font-size: 18px;
