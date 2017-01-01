@@ -63,6 +63,10 @@ p.home {
   font-weight: 300;
 }
 
+p.about {
+  font-weight: 300;
+}
+
 li {
   font-size: 18px;
   color: #44484a;
