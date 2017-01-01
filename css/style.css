@@ -1092,7 +1092,7 @@ footer .footer-copyright p {
 @media (max-width: 650px) {
 
   #home {
-    height: 100vh;
+    height: 56vh;
   }
 
   h1 {
@@ -1145,6 +1145,10 @@ footer .footer-copyright p {
 
   .innerpage-first {
     margin: 40px auto 20px;
+  }
+
+  #portfolio {
+    padding-top: 40px;
   }
 
 
