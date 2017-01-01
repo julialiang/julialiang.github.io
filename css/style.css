@@ -112,14 +112,14 @@ html{
 
 a {
   /*color: #1dc9e3;*/
-  color: #339966;
+  color: #9DC4B5;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #339966;
+  color: #417565;
   outline: none;
 }
 
@@ -276,7 +276,7 @@ footer {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #339966 !important;
+    color: #417565 !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -853,7 +853,7 @@ footer {
 }
 
 .prev-next a:hover{
-  color: #339966;
+  color: #417565;
 }
 
 .prev-button{
@@ -913,7 +913,7 @@ footer .footer-link ul li a {
 }
 
 footer .footer-link ul li a:hover {
-  color: #339966;
+  color: #417565;
 }
 
 footer .footer-copyright {
@@ -959,7 +959,7 @@ footer .footer-copyright p {
 
 .social-icon li a:hover {
     /*background: #417565;*/
-    color: #339966;
+    color: #417565;
     /*top: -5px;*/
 }
 
