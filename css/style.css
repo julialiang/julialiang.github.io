@@ -66,6 +66,7 @@ p.home {
 p.about {
   font-weight: 300;
   font-size: 27px;
+  line-height: 42px;
 }
 
 li {
@@ -1002,6 +1003,10 @@ footer .footer-copyright p {
   }
 
   #home p {
+    font-size: 23px;
+  }
+
+  p.about {
     font-size: 23px;
   }
 
