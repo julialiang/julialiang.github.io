@@ -6,10 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" media="all" href="css/app.css">
+    
+    <!-- Typekit: Connect YOUR Typekit ID here. This kit ID is for test purpose only. -->
     <script src="https://use.typekit.net/xkn7usp.js"></script>
     <script>try {Typekit.load( {async: true });} catch (e){}</script>
+    <!--END TYPEKIT -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
+    <script>          
+      var theURL = "https://b645rlr6nc.execute-api.us-east-1.amazonaws.com/prod/alexaZoo?TableName=CurPage";
+
+      // LOAD THE CURRENT PAGE FIRST
+      $(document).ready(function(){
+        var currentPage = 'forest'; // the original page
+        var newPage = '';
+
+      //POLL DB EVERY SECOND FOR PAGE CHANGES
+        function poll(){
+          setTimeout(function(){
+            $.ajax({ 
+              type: 'GET',
+              dataType: 'json',
+              url: theURL, 
+              success: function(data){
+                newPage = data['Items'][0]['curPage'];
+                if (currentPage !== newPage) {
+                  //LOAD THE NEW PAGE
+                  var pageToLoad = newPage + '.html';
+                  window.open(pageToLoad,'_self',false);
+                };
+                poll();
+            }, dataType: "json"});
+          }, 1000);
+        }
+        poll();
+      });
     </script>
   </head>
 
