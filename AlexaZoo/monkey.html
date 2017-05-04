@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Monkey</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Page description">
+    <!--Twitter Card data-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+    <!--Open Graph data-->
+    <meta property="og:title" content="Title Here">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.example.com/">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name, i.e. Moz">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <!-- Typekit: Connect YOUR Typekit ID here. This kit ID is for test purpose only. -->
+    <script src="https://use.typekit.net/xkn7usp.js"></script>
+    <script>try {Typekit.load( {async: true });} catch (e){}</script>
+    <!--END TYPEKIT -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>          
+      var theURL = "https://b645rlr6nc.execute-api.us-east-1.amazonaws.com/prod/alexaZoo?TableName=CurPage";
+
+      // LOAD THE CURRENT PAGE FIRST
+      $(document).ready(function(){
+        var currentPage = 'monkey'; // the original page
+        var newPage = '';
+
+      //POLL DB EVERY SECOND FOR PAGE CHANGES
+        function poll(){
+          setTimeout(function(){
+            $.ajax({ 
+              type: 'GET',
+              dataType: 'json',
+              url: theURL, 
+              success: function(data){
+                newPage = data['Items'][0]['curPage'];
+                if (currentPage !== newPage) {
+                  //LOAD THE NEW PAGE
+                  var pageToLoad = newPage + '.html';
+                  window.open(pageToLoad,'_self',false);
+                };
+                poll();
+            }, dataType: "json"});
+          }, 1000);
+        }
+        poll();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="out">
+      <header class="header">
+        <div class="header__center center center_lg">
+          <nav class="header__nav js-nav">
+            <p class="header__link logo">ALEXA ZOO</p>
+          </nav>  
+        </div>
+      </header>
+      <div class="container">
+        <div class="section animal">
+          <div class="section__center center">
+            <div class="section__head">
+              <!-- PUT ANIMAL NAME HERE -->
+              <div class="section__title">MONKEY</div> 
+            </div>
+            <div class="section__body">
+              <div class="videos">
+                <div class="videos__col feature">
+                  <a href="#" class="videos__item">
+                    <!-- PUT A FOCUS IMAGE HERE WHERE IT SAYS SRC=" " -->
+                    <div class="videos__preview"><img src="img/monkey.jpg" alt="video" class="videos__pic">
+                    </div>
+                    <div class="videos__content"><span class="videos__user">Did you know?</span> There are 264 species of monkeys! </div>
+                  </a>
+                </div>
+                <div class="videos__col wow fadeInUp">
+                  <!-- FOR EACH OF THESE, CHANGE THE SRC TO AN ANIMAL YOUTUBE VIDEO -->
+                  <iframe width="258px" height="172px" src="https://www.youtube.com/embed/owr198WQpM8" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="258px" height="172px" src="https://www.youtube.com/embed/REPoVfN-Ij4" frameborder="0" allowfullscreen></iframe>
+             
+                </div>
+                <div class="videos__col wow fadeInUp">
+                  <iframe width="258px" height="172px" src="https://www.youtube.com/embed/yqzVI0CSKCU" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="258px" height="172px" src="https://www.youtube.com/embed/OkkkPAE9KvE" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="more wow fadeInUp"><a href="#" class="more__btn btn btn_custom">Up Next: Tiger</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
