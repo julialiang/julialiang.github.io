@@ -52,7 +52,7 @@ h4 {
 }
 
 p {
-  color: #757575;
+  color: #5a5a5a;
 /*  color: #44484a;*/
   font-size: 18px;
   font-weight: 400;
@@ -111,16 +111,19 @@ html{
 }
 
 a {
-  /*color: #1dc9e3;*/
-  color: #8BB2A2;
+  color: #417565;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  text-decoration: none !important;
+  /*text-decoration: none !important;*/
 }
 a:hover, a:active, a:focus {
   color: #417565;
   outline: none;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 * {
@@ -254,7 +257,7 @@ footer {
 }
 
 .navbar-default .navbar-brand {
-  color: #757575;
+  color: #5a5a5a;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -264,7 +267,7 @@ footer {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #757575;
+    color: #5a5a5a;
     font-size: 16px;
     font-weight: 500;
     line-height: 50px;
@@ -361,7 +364,7 @@ footer {
 -----------------------------------------*/
 
 #divider p {
-  color: #666;
+  color: #5a5a5a;
   font-size: 26px;
   line-height: 42px;
 }
@@ -574,7 +577,7 @@ footer {
   font-weight: 600;
   text-align: center;
   vertical-align: middle;
-  color: #44484a;
+  color: #5a5a5a;
   font-size: 28px;
 }
 
@@ -641,7 +644,7 @@ footer {
     letter-spacing: 1px;
     padding: 8px 17px;
     display: block;
-    text-decoration: none;
+ /*   text-decoration: none;*/
     -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -769,6 +772,7 @@ footer {
 
 #innerpage h1 {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 
@@ -849,7 +853,7 @@ footer {
 
 .prev-next a{
   font-weight:500;
-  color: #757575;
+  color: #5a5a5a;
 }
 
 .prev-next a:hover{
@@ -907,7 +911,7 @@ footer .footer-link ul li {
 }
 
 footer .footer-link ul li a {
-  color: #757575;
+  color: #5a5a5a;
   transition: all 0.4s ease-in-out;
   text-decoration: none;
 }
@@ -942,7 +946,7 @@ footer .footer-copyright p {
 }
 
 .social-icon li a {
-    color: #757575;
+    color: #5a5a5a;
     border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
